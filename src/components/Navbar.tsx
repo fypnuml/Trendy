@@ -166,9 +166,7 @@ export default function Navbar() {
                   ? pathname === "/contact"
                      ? "bg-white text-charcoal hover:bg-beige"
                      : "bg-copper text-white hover:bg-copper-light"
-                  : pathname === "/contact"
-                     ? "bg-copper text-white"
-                     : "bg-charcoal text-white hover:bg-copper"
+                  : "bg-charcoal text-white hover:bg-copper"
               }`}
             >
               Get in Touch
