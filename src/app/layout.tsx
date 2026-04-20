@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Crafting exceptional aluminum and interior design solutions for modern spaces.",
     type: "website",
   },
+  verification: {
+    google: "J2ti2_vWuLAz4IC621v4fscLeRgWyde0lNcmXrf0e2E",
+  },
 };
 
 export default function RootLayout({
