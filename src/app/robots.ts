@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/private/'],
     },
-    sitemap: 'https://www.trendy-aluminum.com/sitemap.xml',
+    sitemap: 'https://www.grace-aluminum.com/sitemap.xml',
   };
 }

@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Trendy Aluminum & Interiors",
-  description: "By using the Trendy website, you agree to our Terms of Service regarding usage, intellectual property, and limitations connecting to our premium services.",
+  title: "Terms of Service | Grace Aluminum",
+  description: "By using the Grace Aluminum website, you agree to our Terms of Service regarding usage, intellectual property, and limitations connecting to our premium services.",
 };
 
 export default function TermsPage() {
@@ -29,7 +29,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-serif font-semibold text-white mt-12 mb-4">2. Intellectual Property</h2>
             <p className="text-white/70 leading-relaxed mb-6">
-              All content on this site, including but not limited to the premium architectural photography, custom UI designs, graphics, and text, is the exclusive property of Trendy or its content suppliers and protected by international copyright laws.
+              All content on this site, including but not limited to the premium architectural photography, custom UI designs, graphics, and text, is the exclusive property of Grace Aluminum or its content suppliers and protected by international copyright laws.
             </p>
 
             <h2 className="text-2xl font-serif font-semibold text-white mt-12 mb-4">3. Quotations & Service Provisions</h2>
@@ -39,7 +39,7 @@ export default function TermsPage() {
 
             <h2 className="text-2xl font-serif font-semibold text-white mt-12 mb-4">4. Limitation of Liability</h2>
             <p className="text-white/70 leading-relaxed mb-6">
-              Trendy shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website. The materials on this website are provided &quot;as is&quot; without warranties of any kind.
+              Grace Aluminum shall not be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website. The materials on this website are provided &quot;as is&quot; without warranties of any kind.
             </p>
          </div>
       </div>

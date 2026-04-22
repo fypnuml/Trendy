@@ -15,7 +15,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md z-10">
         <div className="text-center mb-10">
           <span className="text-4xl font-serif font-semibold tracking-tight text-white mb-2 block">
-            Trendy
+            Grace Aluminum
           </span>
           <p className="text-[10px] tracking-[0.2em] text-copper uppercase font-medium">
             Admin Portal Access
@@ -40,8 +40,8 @@ export default function LoginPage() {
                 type="email"
                 required
                 className="w-full px-0 py-3 bg-transparent border-0 border-b border-white/20 focus:border-copper text-white outline-none transition-colors duration-300 placeholder:text-white/20"
-                placeholder="admin@trendy.com"
-                defaultValue="admin@trendy.com"
+                placeholder="admin@grace-aluminum.com"
+                defaultValue="admin@grace-aluminum.com"
               />
             </div>
 

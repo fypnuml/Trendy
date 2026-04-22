@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Grid3x3, DoorOpen, Droplets, LayoutGrid, ChefHat } from "lucide-react";
 import type { Service } from "@/lib/data";
@@ -15,6 +16,15 @@ const iconMap: Record<string, React.ReactNode> = {
   Droplets: <Droplets className="w-8 h-8" />,
   LayoutGrid: <LayoutGrid className="w-8 h-8" />,
   ChefHat: <ChefHat className="w-8 h-8" />,
+};
+
+// Route mapping helper
+const routeMap: Record<string, string> = {
+  "aluminum-windows": "/windows",
+  "aluminum-doors": "/doors",
+  "shower-enclosures": "/catalog/shower",
+  "wardrobes": "/wardrobes",
+  "aluminum-kitchens": "/kitchens",
 };
 
 export default function Services({ services }: ServicesProps) {
@@ -58,41 +68,46 @@ export default function Services({ services }: ServicesProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group premium-card bg-white rounded-sm overflow-hidden border border-border shadow-sm flex flex-col"
+              className="group"
             >
-              {/* Image Area */}
-              <div className="relative aspect-[16/10] bg-charcoal overflow-hidden img-zoom">
-                {/* Fallback image placeholder for now */}
-                <div className="absolute inset-0 flex items-center justify-center bg-charcoal-light">
-                  <div className="text-center text-copper/30">
-                    {iconMap[service.icon]}
+              <Link 
+                href={routeMap[service.slug] || "/services"}
+                className="premium-card bg-white rounded-sm overflow-hidden border border-border shadow-sm flex flex-col h-full hover:border-copper transition-all duration-500"
+              >
+                {/* Image Area */}
+                <div className="relative aspect-[16/10] bg-charcoal overflow-hidden img-zoom">
+                  {/* Service Image */}
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
+                  
+                  {/* Category Badge */}
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="inline-block px-3 py-1 text-[9px] font-medium tracking-[0.15em] uppercase bg-white/95 backdrop-blur-sm text-charcoal rounded-sm shadow-sm">
+                      {service.category}
+                    </span>
                   </div>
                 </div>
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="inline-block px-3 py-1 text-[9px] font-medium tracking-[0.15em] uppercase bg-white/95 backdrop-blur-sm text-charcoal rounded-sm shadow-sm">
-                    {service.category}
-                  </span>
-                </div>
-              </div>
 
-              {/* Content */}
-              <div className="p-8 flex flex-col flex-grow">
-                <h3 className="text-xl font-display font-bold text-charcoal mb-3 group-hover:text-copper transition-colors duration-300">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-charcoal-lighter leading-relaxed mb-6 flex-grow">
-                  {service.description}
-                </p>
-                <div className="flex items-center gap-2 text-charcoal text-xs font-semibold tracking-[0.1em] uppercase group-hover:text-copper group-hover:gap-3 transition-all duration-300 mt-auto">
-                  <span>Explore</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                {/* Content */}
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="text-xl font-display font-bold text-charcoal mb-3 group-hover:text-copper transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-charcoal-lighter leading-relaxed mb-6 flex-grow">
+                    {service.description}
+                  </p>
+                  <div className="flex items-center gap-2 text-charcoal text-xs font-semibold tracking-[0.1em] uppercase group-hover:text-copper group-hover:gap-3 transition-all duration-300 mt-auto">
+                    <span>Explore</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>

@@ -10,6 +10,7 @@ import LoadingScreen from "@/components/LoadingScreen";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import CompanyIntro from "@/components/CompanyIntro";
 
 // Import data methods
 import {
@@ -19,17 +20,19 @@ import {
   getClients,
   getPartners,
 } from "@/lib/data";
+import { getProjectsFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
-  title: "Trendy | Premium Aluminum & Interior Solutions",
-  description: "Transforming spaces with precision-engineered aluminum solutions and bespoke interior design.",
+  title: "Grace Aluminum | Premium Aluminum Sections & Solutions Pakistan",
+  description: "Grace Aluminum is a leading wholesale supplier of premium aluminium sections in Pakistan. Offering all gauges and profiles, we provide high-quality aluminum windows, doors, kitchens, and wardrobes.",
 };
 
 export default function Home() {
   const settings = getSettings();
   // Only slice a preview of services for the home page
   const servicesPreview = getServices().slice(0, 3); 
-  const featuredProjects = getFeaturedProjects();
+  const dynamicProjects = getProjectsFromDir();
+  const featuredProjects = dynamicProjects.length > 0 ? dynamicProjects.slice(0, 3) : getFeaturedProjects();
   const clients = getClients();
   const partners = getPartners();
 
@@ -37,11 +40,18 @@ export default function Home() {
     <>
       <LoadingScreen />
       <Navbar />
-      <main className="bg-charcoal min-h-screen">
+      <main className="bg-charcoal min-h-screen relative overflow-hidden">
+        {/* Persistent Page-wide Visual Depth */}
+        <div className="absolute inset-0 noise-bg opacity-20 pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1500px] bg-gradient-radial from-copper/5 to-transparent pointer-events-none" />
+        
         <Hero settings={settings} />
         
         {/* Quick Icon Categories */}
         <Categories />
+
+        {/* Company Introduction Section */}
+        <CompanyIntro />
         
         {/* Services Preview Section */}
         <section className="relative">

@@ -177,7 +177,7 @@ export const services: Service[] = [
       "High-performance aluminum window systems designed for energy efficiency, durability, and architectural elegance.",
     longDescription:
       "Our aluminum window solutions combine cutting-edge thermal break technology with sleek, modern profiles. Every window is precision-engineered to deliver exceptional insulation, weather resistance, and aesthetic appeal. From casement and sliding windows to tilt-and-turn configurations, we offer systems tailored to your architectural vision.",
-    image: "/images/services/windows.jpg",
+    image: "/assets/windows/windows1.jpeg",
     icon: "Grid3x3",
     order: 1,
     isActive: true,
@@ -191,7 +191,7 @@ export const services: Service[] = [
       "Robust and stylish aluminum door solutions — from entrance systems to sliding and folding configurations.",
     longDescription:
       "Transform your entryways with our premium aluminum door systems. We specialize in pivot doors, bi-fold systems, sliding doors, and secure entrance solutions. Each door is built for durability, security, and visual impact — making a lasting first impression.",
-    image: "/images/services/doors.jpg",
+    image: "/assets/doors/door 1.jpeg",
     icon: "DoorOpen",
     order: 2,
     isActive: true,
@@ -205,7 +205,7 @@ export const services: Service[] = [
       "Frameless and semi-frameless glass shower enclosures with premium aluminum hardware and fittings.",
     longDescription:
       "Elevate your bathroom with our bespoke shower enclosures. Featuring frameless glass panels, precision aluminum hardware, and watertight engineering, our enclosures combine luxury with functionality. Custom sizes and configurations available for any bathroom layout.",
-    image: "/images/services/showers.jpg",
+    image: "/assets/shower/showers.jpeg",
     icon: "Droplets",
     order: 3,
     isActive: true,
@@ -219,7 +219,7 @@ export const services: Service[] = [
       "Custom-built wardrobe systems with sleek aluminum frames, maximizing storage with contemporary aesthetics.",
     longDescription:
       "Our wardrobe solutions blend intelligent storage design with contemporary aesthetics. Featuring aluminum-framed sliding doors, soft-close mechanisms, and customizable interior configurations, each wardrobe is designed to maximize space while adding elegance to your bedroom.",
-    image: "/images/services/wardrobes.jpg",
+    image: "/assets/wardrobes/wardobes.jpeg",
     icon: "LayoutGrid",
     order: 4,
     isActive: true,
@@ -233,7 +233,7 @@ export const services: Service[] = [
       "Modern kitchen solutions featuring premium aluminum cabinetry, countertops, and integrated design elements.",
     longDescription:
       "Discover the future of kitchen design with our aluminum kitchen solutions. Resistant to moisture, heat, and wear, aluminum kitchens offer unmatched durability without compromising on style. From sleek cabinet profiles to integrated handles and premium finishes, we create kitchens that stand the test of time.",
-    image: "/images/services/kitchens.jpg",
+    image: "/assets/kitchens/kitchen1.jpeg",
     icon: "ChefHat",
     order: 5,
     isActive: true,
@@ -248,7 +248,7 @@ export const projects: Project[] = [
     title: "Modern Villa Facade",
     slug: "modern-villa-facade",
     category: "Exterior",
-    images: ["/images/projects/villa-1.jpg"],
+    images: ["/assets/projects/Residential Villa Windows.jpeg"],
     description:
       "Complete aluminum facade installation for a modern residential villa, featuring floor-to-ceiling windows and custom entrance doors.",
     client: "Private Residence",
@@ -261,7 +261,7 @@ export const projects: Project[] = [
     title: "Luxury Kitchen Remodel",
     slug: "luxury-kitchen-remodel",
     category: "Interior",
-    images: ["/images/projects/kitchen-1.jpg"],
+    images: ["/assets/projects/Aluminium SkyLight.jpeg"],
     description:
       "Full kitchen redesign with premium aluminum cabinetry, integrated lighting, and contemporary finishes.",
     client: "Al Rashid Family",
@@ -274,7 +274,7 @@ export const projects: Project[] = [
     title: "Office Tower Windows",
     slug: "office-tower-windows",
     category: "Aluminum",
-    images: ["/images/projects/office-1.jpg"],
+    images: ["/assets/projects/Commercial Windows Implementation.jpeg"],
     description:
       "Commercial-grade aluminum curtain wall system for a 12-story office building, delivering superior thermal performance.",
     client: "Skyline Developments",
@@ -344,28 +344,28 @@ export const partners: Client[] = [
 // ─── Site Settings ───────────────────────────────────
 
 export const siteSettings: SiteSettings = {
-  companyName: "Trendy",
-  tagline: "Premium Aluminum & Interior Solutions",
-  email: "info@trendy.com",
-  phone: "+971 50 123 4567",
-  address: "Dubai, United Arab Emirates",
-  whatsappNumber: "+971501234567",
+  companyName: "Grace Aluminum",
+  tagline: "Premium Aluminum Sections & Solutions",
+  email: "gracealuminiumpk@gmail.com",
+  phone: "061 4586937",
+  address: "Civic Centre OPP. Quaid E Azam Academy, Link Abdali Road, Nawan Shehar, Multan",
+  whatsappNumber: "+923337444581",
   socialMedia: {
-    instagram: "https://instagram.com/trendy",
-    facebook: "https://facebook.com/trendy",
-    whatsapp: "https://wa.me/971501234567",
+    instagram: "https://www.instagram.com/gracealuminium.pk",
+    facebook: "https://www.facebook.com/share/1AMaA4UwFu/",
+    whatsapp: "https://wa.me/923337444581",
     twitter: "",
     linkedin: "",
   },
-  heroTitle: "Premium Aluminum & Interior Solutions",
+  heroTitle: "Premium Aluminum Solutions",
   heroSubtitle:
-    "Transforming spaces with precision-engineered aluminum solutions and bespoke interior design. Where quality meets elegance.",
+    "Grace Aluminum is a leading wholesale supplier of premium aluminium sections, offering all gauges and profiles to meet the highest industry standards.",
   aboutText:
-    "With over a decade of expertise, Trendy stands as a premier provider of aluminum and interior design solutions. We combine precision engineering with aesthetic excellence to transform ordinary spaces into extraordinary environments.",
+    "Grace Aluminum is a trusted name in the aluminium industry, delivering premium-quality solutions with a focus on strength, precision, and reliability.",
   aboutText2:
-    "From sleek aluminum facades and windows to bespoke kitchens and contemporary interiors, every project reflects our commitment to quality, innovation, and timeless design.",
+    "We proudly offer our own brands—Grace and Grace Pro—developed to meet the highest standards of performance and durability.",
   stats: [
-    { number: "10+", label: "Years Experience" },
+    { number: "20+", label: "Years Experience" },
     { number: "500+", label: "Projects Delivered" },
     { number: "100%", label: "Client Satisfaction" },
   ],

@@ -17,6 +17,7 @@ export default function Footer({ settings }: FooterProps) {
         { label: "Aluminum Windows", href: "/windows" },
         { label: "Kitchens", href: "/kitchens" },
         { label: "Wardrobes", href: "/wardrobes" },
+        { label: "Shower Enclosures", href: "/catalog/shower" },
       ],
     },
     {
@@ -50,8 +51,7 @@ export default function Footer({ settings }: FooterProps) {
               </Link>
             </div>
             <p className="text-sm text-white/50 leading-relaxed max-w-sm mb-8 pr-4">
-              Transforming spaces with precision-engineered aluminum solutions
-              and bespoke interior design. Premium quality, timeless elegance.
+              A leading wholesale supplier of premium aluminium sections, offering all gauges and profiles to meet the highest industry standards with precision and reliability.
             </p>
 
             {/* Social Icons */}

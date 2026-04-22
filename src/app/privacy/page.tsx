@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Trendy Aluminum & Interiors",
-  description: "Read our privacy policy to understand how Trendy protects your personal data and ensures secure interactions on our platform.",
+  title: "Privacy Policy | Grace Aluminum",
+  description: "Read our privacy policy to understand how Grace Aluminum protects your personal data and ensures secure interactions on our platform.",
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             
             <h2 className="text-2xl font-serif font-semibold text-white mt-12 mb-4">1. Information We Collect</h2>
             <p className="text-white/70 leading-relaxed mb-6">
-              When you use the Trendy website, we may collect personal information such as your name, email address, phone number, and any details you provide via our contact forms or direct communications. We also automatically collect non-identifiable usage data through cookies and analytics tools to improve our website experience.
+              When you use the Grace Aluminum website, we may collect personal information such as your name, email address, phone number, and any details you provide via our contact forms or direct communications. We also automatically collect non-identifiable usage data through cookies and analytics tools to improve our website experience.
             </p>
 
             <h2 className="text-2xl font-serif font-semibold text-white mt-12 mb-4">2. How We Use Your Information</h2>

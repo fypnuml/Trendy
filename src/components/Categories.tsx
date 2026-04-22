@@ -11,28 +11,28 @@ const categories = [
     count: "Various Systems",
     icon: <Grid3x3 className="w-6 h-6" />,
     href: "/doors",
-    image: "/images/catalog/door-pivot.jpg", // We'll make sure images exist later or fail gracefully
+    image: "/assets/doors/door 1.jpeg",
   },
   {
     title: "Windows",
     count: "Custom Layouts",
     icon: <LayoutGrid className="w-6 h-6" />,
     href: "/windows",
-    image: "/images/catalog/window-tilt.jpg",
+    image: "/assets/windows/windows1.jpeg",
   },
   {
     title: "Kitchens",
     count: "Premium Aluminum",
     icon: <Grid3x3 className="w-6 h-6" />,
     href: "/kitchens",
-    image: "/images/catalog/kitchen-black.jpg",
+    image: "/assets/kitchens/kitchen1.jpeg",
   },
   {
     title: "Wardrobes",
     count: "Bespoke Storage",
     icon: <LayoutGrid className="w-6 h-6" />,
     href: "/wardrobes",
-    image: "/images/catalog/wardrobe-glass.jpg",
+    image: "/assets/wardrobes/wardobes.jpeg",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function Categories() {
                 <div className="absolute inset-0 bg-charcoal-light" />
                 <div 
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-60"
-                  style={{ backgroundImage: `url(${category.image})` }}
+                  style={{ backgroundImage: `url("${category.image}")` }}
                 />
                 
                 {/* Gradient Overlay */}

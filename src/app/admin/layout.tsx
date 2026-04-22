@@ -27,7 +27,7 @@ export default async function AdminLayout({
       {/* Sidebar */}
       <aside className="hidden md:flex flex-col w-64 bg-charcoal text-white h-screen sticky top-0">
         <div className="p-6 border-b border-white/10">
-          <span className="text-2xl font-serif font-semibold tracking-tight">Trendy</span>
+          <span className="text-2xl font-serif font-semibold tracking-tight">Grace Aluminum</span>
           <span className="text-[10px] tracking-[0.2em] text-copper uppercase block mt-1">Admin Panel</span>
         </div>
 
@@ -71,7 +71,7 @@ export default async function AdminLayout({
       {/* Main Content */}
       <main className="flex-1 flex flex-col min-h-screen">
         <header className="h-16 md:hidden bg-white border-b flex items-center px-4 justify-between sticky top-0 z-10">
-           <span className="text-lg font-serif font-semibold text-charcoal">Trendy Admin</span>
+           <span className="text-lg font-serif font-semibold text-charcoal">Grace Admin</span>
            <button className="p-2 text-charcoal">
              <Menu className="w-6 h-6" />
            </button>

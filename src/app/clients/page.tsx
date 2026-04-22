@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Clients & Partners | Trendy Aluminum & Interiors",
+  title: "Clients & Partners | Grace Aluminum",
   description: "Discover the organizations and industry leaders we partner with to deliver excellence.",
 };
 

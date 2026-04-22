@@ -6,8 +6,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Trendy Aluminum & Interiors",
-  description: "Get in touch with our team for premium architectural aluminum and interior design consultation.",
+  title: "Contact Us | Grace Aluminum",
+  description: "Get in touch with our team for premium architectural aluminum solutions and design consultation.",
 };
 
 export default function ContactPage() {

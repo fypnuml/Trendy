@@ -15,7 +15,7 @@ export default function AdminDashboard() {
     <>
       <div>
         <h1 className="text-2xl font-semibold text-charcoal mb-2">Dashboard Overview</h1>
-        <p className="text-sm text-charcoal-lighter">Welcome back to the Trendy admin panel.</p>
+        <p className="text-sm text-charcoal-lighter">Welcome back to the Grace Aluminum admin panel.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

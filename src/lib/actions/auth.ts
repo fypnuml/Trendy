@@ -8,14 +8,14 @@ export async function loginAction(prevState: unknown, formData: FormData) {
   const password = formData.get("password") as string;
 
   // In-memory demo credentials for now:
-  const DEMO_EMAIL = "admin@trendy.com";
+  const DEMO_EMAIL = "admin@grace-aluminum.com";
   const DEMO_PASSWORD = "password123";
 
   if (email === DEMO_EMAIL && password === DEMO_PASSWORD) {
     await createSession(email);
     redirect("/admin");
   } else {
-    return { error: "Invalid credentials. Try admin@trendy.com / password123" };
+    return { error: "Invalid credentials. Try admin@grace-aluminum.com / password123" };
   }
 }
 

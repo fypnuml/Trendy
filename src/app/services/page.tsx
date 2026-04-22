@@ -6,8 +6,8 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Our Services | Trendy Aluminum & Interiors",
-  description: "Explore our premium aluminum fabrication, doors, windows, kitchens, and architectural interior services.",
+  title: "Our Services | Grace Aluminum",
+  description: "Explore our premium aluminum fabrication, doors, windows, kitchens, and architectural solutions.",
 };
 
 export default function ServicesPage() {

@@ -4,14 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CatalogCategory from "@/components/CatalogCategory";
+import { getImagesFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
-  title: "Luxury Wardrobes | Trendy Interiors",
+  title: "Luxury Wardrobes | Grace Aluminum",
   description: "Custom built-in and walk-in wardrobe systems featuring sleek aluminum frames and bespoke interior organization.",
 };
 
 export default function WardrobesPage() {
   const settings = getSettings();
+  const images = getImagesFromDir("wardrobes");
 
   return (
     <main className="bg-charcoal min-h-screen flex flex-col">
@@ -22,6 +24,7 @@ export default function WardrobesPage() {
           category="wardrobes" 
           title="Luxury Wardrobes" 
           description="Transform your space with intelligent storage design. Our custom wardrobe solutions blend sleek aluminum profiles with premium glass and functional interiors." 
+          images={images}
         />
       </div>
       <Footer settings={settings} />

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,30 +30,47 @@ export default function LoadingScreen() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 bg-charcoal z-[100] flex items-center justify-center noise-bg"
+          className="fixed inset-0 bg-charcoal z-[100] flex items-center justify-center overflow-hidden"
         >
-           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-copper/[0.05] rounded-full blur-[120px] pointer-events-none" />
-           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold/[0.03] rounded-full blur-[100px] pointer-events-none" />
+           {/* Modern Premium Background Effects */}
+           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-copper/[0.08] rounded-full blur-[140px] pointer-events-none animate-pulse" />
+           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/[0.05] rounded-full blur-[120px] pointer-events-none" />
+           <div className="absolute inset-0 noise-bg opacity-20" />
 
-          <div className="flex flex-col items-center gap-10 relative z-10 w-full max-w-xs px-6">
-            {/* Logo Mark */}
-            <div className="relative text-center">
-               <motion.span 
-                 initial={{ opacity: 0, y: 10 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.5 }}
-                 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-white block mb-2"
+          <div className="flex flex-col items-center gap-12 relative z-10 w-full max-w-xs px-6">
+            {/* Logo and Brand */}
+            <div className="relative flex flex-col items-center text-center">
+               <motion.div
+                 initial={{ opacity: 0, scale: 0.8 }}
+                 animate={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                 className="relative w-24 h-24 mb-6 rounded-full overflow-hidden border border-white/10 shadow-2xl"
                >
-                Trendy
-              </motion.span>
-               <motion.span 
+                 <Image 
+                   src="/assets/logo/logo.jpeg" 
+                   alt="Grace Aluminum Logo" 
+                   fill
+                   className="object-cover"
+                   priority
+                 />
+               </motion.div>
+               
+               <motion.h2 
+                 initial={{ opacity: 0, y: 15 }}
+                 animate={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.3 }}
+                 className="text-3xl md:text-4xl font-display font-bold tracking-tight text-white block mb-1"
+               >
+                Grace<span className="text-copper"> Aluminum</span>
+              </motion.h2>
+               <motion.p 
                  initial={{ opacity: 0 }}
                  animate={{ opacity: 1 }}
-                 transition={{ duration: 0.5, delay: 0.2 }}
-                 className="text-[9px] tracking-[0.25em] text-copper uppercase font-medium"
+                 transition={{ duration: 0.6, delay: 0.5 }}
+                 className="text-[10px] tracking-[0.3em] text-white/40 uppercase font-medium"
                >
-                Premium Solutions
-              </motion.span>
+                Excellence in Aluminum
+              </motion.p>
             </div>
 
             {/* Progress Bar Container */}

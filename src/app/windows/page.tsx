@@ -4,14 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import CatalogCategory from "@/components/CatalogCategory";
+import { getImagesFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
-  title: "Architectural Windows | Trendy Aluminum",
+  title: "Architectural Windows | Grace Aluminum",
   description: "Discover our premium aluminum window systems designed for superior thermal performance and panoramic views.",
 };
 
 export default function WindowsPage() {
   const settings = getSettings();
+  const images = getImagesFromDir("windows");
 
   return (
     <main className="bg-charcoal min-h-screen flex flex-col">
@@ -22,6 +24,7 @@ export default function WindowsPage() {
           category="windows" 
           title="Architectural Windows" 
           description="Frame your world with our high-performance window systems. From floor-to-ceiling panoramic glass to versatile European tilt-and-turn functionality." 
+          images={images}
         />
       </div>
       <Footer settings={settings} />

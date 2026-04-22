@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getServices, getProjects, catalog } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.trendy-aluminum.com';
+  const baseUrl = 'https://www.grace-aluminum.com';
 
   // Static core routes
   const routes = [
@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/windows',
     '/kitchens',
     '/wardrobes',
+    '/catalog/shower',
     '/privacy',
     '/terms'
   ].map((route) => ({

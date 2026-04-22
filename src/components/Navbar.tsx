@@ -19,6 +19,7 @@ const catalogLinks = [
   { label: "Windows", href: "/windows" },
   { label: "Kitchens", href: "/kitchens" },
   { label: "Wardrobes", href: "/wardrobes" },
+  { label: "Shower", href: "/catalog/shower" },
 ];
 
 export default function Navbar() {
@@ -70,11 +71,11 @@ export default function Navbar() {
                   isSolid ? "text-white" : "text-charcoal"
                 }`}
               >
-                Trendy
+                Grace Aluminum
               </span>
               <div className={`hidden sm:flex flex-col transition-colors duration-300`}>
                 <span className="text-[9px] tracking-[0.25em] uppercase font-medium text-copper">
-                  Aluminum & Interiors
+                  Premium & Industrial Solutions
                 </span>
               </div>
             </Link>
