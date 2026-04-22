@@ -69,7 +69,7 @@ export default function ClientsPage() {
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/assets/clients/OUR Clients.jpeg" 
+              src="/assets/clients/our_clients.jpeg" 
               alt="Grace Aluminum Valued Clients" 
               className="w-full h-auto object-cover"
             />

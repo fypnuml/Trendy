@@ -343,13 +343,13 @@ export const clients: Client[] = [
   { id: "cl-15", name: "Mehar Fatima Tower", logo: "", type: "client", order: 15, isActive: true },
   { id: "cl-16", name: "Ibn-E-Sina Hospital", logo: "", type: "client", order: 16, isActive: true },
   { id: "cl-17", name: "Green Homes", logo: "", type: "client", order: 17, isActive: true },
-  { id: "cl-18", name: "TKW", logo: "/assets/clients/TKW.jpeg", type: "client", order: 18, isActive: true },
-  { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/PAK AL TECH ALUMINIUM.jpeg", type: "client", order: 19, isActive: true },
+  { id: "cl-18", name: "TKW", logo: "/assets/clients/tkw.jpeg", type: "client", order: 18, isActive: true },
+  { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/pak_al_tech.jpeg", type: "client", order: 19, isActive: true },
 ];
 
 export const partners: Client[] = [
-  { id: "pt-1", name: "Grace Pro Aluminium", logo: "/assets/partner/Grace Pro Aluminium.jpeg", type: "partner", order: 1, isActive: true },
-  { id: "pt-2", name: "THE MUGHAL'S ALUMINIUM", logo: "/assets/partner/THE MUGHAL'S ALUMINIUM.jpeg", type: "partner", order: 2, isActive: true },
+  { id: "pt-1", name: "Grace Pro Aluminium", logo: "/assets/partner/grace_pro.jpeg", type: "partner", order: 1, isActive: true },
+  { id: "pt-2", name: "THE MUGHAL'S ALUMINIUM", logo: "/assets/partner/mughals.jpeg", type: "partner", order: 2, isActive: true },
 ];
 
 // ─── Site Settings ───────────────────────────────────
