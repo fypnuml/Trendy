@@ -18,7 +18,7 @@ export default function CompanyIntro() {
             <div className="relative aspect-square rounded-sm overflow-hidden z-10 shadow-2xl">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src="/assets/home/home page.jpeg" 
+                src="/assets/home/home_page.jpeg" 
                 alt="Grace Aluminum Facility" 
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700 hover:scale-105"
               />

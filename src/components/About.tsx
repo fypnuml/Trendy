@@ -80,7 +80,7 @@ export default function About({ settings }: AboutProps) {
             <div className="relative aspect-[4/5] bg-beige-dark rounded-sm overflow-hidden shadow-2xl shadow-charcoal/10">
                {/* eslint-disable-next-line @next/next/no-img-element */}
                <img 
-                 src="/assets/projects/Metro Cash And Carry Multan.jpeg" 
+                 src="/assets/home/home_page.jpeg" 
                  alt="Grace Aluminum Quality Solutions" 
                  className="absolute inset-0 w-full h-full object-cover"
                />
