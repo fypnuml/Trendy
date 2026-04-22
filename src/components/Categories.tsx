@@ -55,7 +55,7 @@ const itemVariants = {
 
 export default function Categories() {
   return (
-    <section className="py-24 bg-charcoal relative">
+    <section id="categories" className="py-24 bg-charcoal relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>

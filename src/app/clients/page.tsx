@@ -6,8 +6,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { CheckCircle2, Building2, School2, Hospital, Building } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Clients & Partners | Grace Aluminum",
-  description: "Discover the organizations and industry leaders we partner with to deliver excellence.",
+  title: "Clients & Strategic Partners | Grace Aluminium",
+  description: "Explore our prestigious portfolio of clients and strategic partners. Trusted by leading housing societies and commercial groups in Pakistan.",
 };
 
 export default function ClientsPage() {

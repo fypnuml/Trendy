@@ -7,8 +7,8 @@ import CatalogCategory from "@/components/CatalogCategory";
 import { getImagesFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
-  title: "Architectural Windows | Grace Aluminum",
-  description: "Discover our premium aluminum window systems designed for superior thermal performance and panoramic views.",
+  title: "Architectural Windows | Grace Aluminium",
+  description: "Discover our premium aluminium window systems designed for superior thermal performance, durability, and panoramic views.",
 };
 
 export default function WindowsPage() {

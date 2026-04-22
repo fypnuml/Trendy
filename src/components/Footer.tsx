@@ -13,8 +13,8 @@ export default function Footer({ settings }: FooterProps) {
     {
       title: "Products",
       links: [
-        { label: "Aluminum Doors", href: "/doors" },
-        { label: "Aluminum Windows", href: "/windows" },
+        { label: "Aluminium Doors", href: "/doors" },
+        { label: "Aluminium Windows", href: "/windows" },
         { label: "Kitchens", href: "/kitchens" },
         { label: "Wardrobes", href: "/wardrobes" },
         { label: "Shower Enclosures", href: "/catalog/shower" },
@@ -51,7 +51,7 @@ export default function Footer({ settings }: FooterProps) {
               </Link>
             </div>
             <p className="text-sm text-white/50 leading-relaxed max-w-sm mb-8 pr-4">
-              A leading wholesale supplier of premium aluminium sections, offering all gauges and profiles to meet the highest industry standards with precision and reliability.
+              Leading retailer and wholesaler of premium aluminium products. Delivering full-gauge thickness, superior strength, and lasting quality for modern architecture.
             </p>
 
             {/* Social Icons */}

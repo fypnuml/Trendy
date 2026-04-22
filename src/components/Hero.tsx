@@ -90,7 +90,7 @@ export default function Hero({ settings }: HeroProps) {
                   Premium
                 </span>
                 <span className="text-4xl sm:text-6xl md:text-7xl font-serif italic text-copper/90 font-light tracking-wide mt-2 sm:mt-0">
-                  Aluminum
+                  Aluminium
                 </span>
               </div>
             </motion.h1>

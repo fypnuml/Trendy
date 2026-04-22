@@ -43,15 +43,15 @@ export default function CompanyIntro() {
             </span>
             <h2 className="text-3xl md:text-5xl font-display font-bold text-white leading-tight mb-8">
               The Leading Wholesale <br />
-              <span className="text-copper">Aluminum Supplier</span>
+              <span className="text-copper">Aluminium Solutions</span>
             </h2>
             
             <div className="space-y-6 text-white/70 font-light leading-relaxed text-lg">
               <p>
-                Grace Aluminum is a leading wholesale supplier of premium aluminium sections, offering all gauges and profiles to meet the highest industry standards. We combine consistent quality with precision and reliability, ensuring every product reflects excellence.
+                Grace Aluminium is a leading retailer and wholesaler of premium aluminium products. Our showroom offers a complete display of windows, doors, and accessories, while our wholesale network ensures reliable supply for businesses and retailers.
               </p>
               <p>
-                With a strong nationwide distribution network, we are committed to delivering orders quickly and efficiently—keeping your projects moving without delay. At Grace Aluminum, we don’t just supply aluminium, we deliver trust, performance, and long-term value.
+                With our own brands, Grace and Grace Pro, we deliver full-gauge thickness, superior strength, and lasting quality. We are committed to delivering orders quickly and efficiently—keeping your projects moving without delay. At Grace Aluminium, we don’t just supply aluminium, we deliver trust, performance, and long-term value.
               </p>
             </div>
 

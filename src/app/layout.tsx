@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Grace Aluminum | Premium Aluminum Sections & Solutions Pakistan",
+  title: "Grace Aluminium | Premium Aluminium Sections & Solutions Pakistan",
   description:
-    "Grace Aluminum is a leading wholesale supplier of premium aluminium sections in Pakistan. Offering all gauges and profiles, we provide high-quality aluminum windows, doors, kitchens, and wardrobes.",
+    "Grace Aluminium is a leading retailer and wholesaler of premium aluminium products. We offer a complete range of windows, doors, and accessories with superior strength and quality.",
   keywords: [
-    "Grace Aluminum",
-    "Aluminum supplier Pakistan",
+    "Grace Aluminium",
+    "Aluminium supplier Pakistan",
     "Aluminium sections Multan",
-    "Aluminum profiles Pakistan",
-    "Premium aluminum solutions",
-    "Wholesale aluminum supplier",
-    "Aluminum windows Pakistan",
-    "Aluminum doors Pakistan",
+    "Aluminium profiles Pakistan",
+    "Premium aluminium solutions",
+    "Wholesale aluminium supplier",
+    "Aluminium windows Pakistan",
+    "Aluminium doors Pakistan",
   ],
   openGraph: {
-    title: "Grace Aluminum | Premium Aluminum Sections & Solutions",
+    title: "Grace Aluminium | Premium Aluminium Sections & Solutions",
     description:
-      "Wholesale supplier of premium aluminium sections, offering all gauges and profiles for modern construction and interiors across Pakistan.",
+      "Retailer and wholesaler of premium aluminium products, offering complete solutions for windows, doors, and architectural accessories across Pakistan.",
     type: "website",
     images: [
       {
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: "/assets/logo/log.jpeg",
-    shortcut: "/assets/logo/log.jpeg",
-    apple: "/assets/logo/log.jpeg",
+    icon: "/assets/logo/logo.jpeg",
+    shortcut: "/assets/logo/logo.jpeg",
+    apple: "/assets/logo/logo.jpeg",
   },
   verification: {
     google: "J2ti2_vWuLAz4IC621v4fscLeRgWyde0lNcmXrf0e2E",

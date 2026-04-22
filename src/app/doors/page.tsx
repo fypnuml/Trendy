@@ -7,8 +7,8 @@ import CatalogCategory from "@/components/CatalogCategory";
 import { getImagesFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
-  title: "Premium Doors Collection | Grace Aluminum",
-  description: "Explore our collection of high-end aluminum doors, featuring pivot systems, minimalist sliding doors, and more.",
+  title: "Premium Doors Collection | Grace Aluminium",
+  description: "Explore our collection of high-end aluminium doors, featuring pivot systems, minimalist sliding doors, and architectural entrance solutions.",
 };
 
 export default function DoorsPage() {

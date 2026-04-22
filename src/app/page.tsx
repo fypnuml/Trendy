@@ -24,7 +24,7 @@ import { getProjectsFromDir } from "@/lib/assetsUtils";
 
 export const metadata: Metadata = {
   title: "Grace Aluminum | Premium Aluminum Sections & Solutions Pakistan",
-  description: "Grace Aluminum is a leading wholesale supplier of premium aluminium sections in Pakistan. Offering all gauges and profiles, we provide high-quality aluminum windows, doors, kitchens, and wardrobes.",
+  description: "Grace Aluminium is a leading retailer and wholesaler of premium aluminium products. We offer a complete range of windows, doors, and accessories with superior strength and quality.",
 };
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
   // Only slice a preview of services for the home page
   const servicesPreview = getServices().slice(0, 3); 
   const dynamicProjects = getProjectsFromDir();
-  const featuredProjects = dynamicProjects.length > 0 ? dynamicProjects.slice(0, 3) : getFeaturedProjects();
+  const featuredProjects = dynamicProjects.length > 0 ? dynamicProjects.slice(0, 9) : getFeaturedProjects();
   const clients = getClients();
   const partners = getPartners();
 

@@ -343,19 +343,19 @@ export const clients: Client[] = [
   { id: "cl-15", name: "Mehar Fatima Tower", logo: "", type: "client", order: 15, isActive: true },
   { id: "cl-16", name: "Ibn-E-Sina Hospital", logo: "", type: "client", order: 16, isActive: true },
   { id: "cl-17", name: "Green Homes", logo: "", type: "client", order: 17, isActive: true },
-  { id: "cl-18", name: "TKW", logo: "/assets/clients/tkw.jpeg", type: "client", order: 18, isActive: true },
-  { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/pak_al_tech.jpeg", type: "client", order: 19, isActive: true },
 ];
 
 export const partners: Client[] = [
   { id: "pt-1", name: "Grace Pro Aluminium", logo: "/assets/partner/grace_pro.jpeg", type: "partner", order: 1, isActive: true },
   { id: "pt-2", name: "THE MUGHAL'S ALUMINIUM", logo: "/assets/partner/mughals.jpeg", type: "partner", order: 2, isActive: true },
+  { id: "cl-18", name: "TKW", logo: "/assets/clients/tkw.jpeg", type: "partner", order: 3, isActive: true },
+  { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/pak_al_tech.jpeg", type: "partner", order: 4, isActive: true },
 ];
 
 // ─── Site Settings ───────────────────────────────────
 
 export const siteSettings: SiteSettings = {
-  companyName: "Grace Aluminum",
+  companyName: "Grace Aluminium",
   tagline: "Premium Aluminum Sections & Solutions",
   email: "gracealuminiumpk@gmail.com",
   phone: "061 4586937",
@@ -370,7 +370,7 @@ export const siteSettings: SiteSettings = {
   },
   heroTitle: "Premium Aluminum Solutions",
   heroSubtitle:
-    "Grace Aluminum is a leading wholesale supplier of premium aluminium sections, offering all gauges and profiles to meet the highest industry standards.",
+    "Grace Aluminium is a leading retailer and wholesaler of premium aluminium products. Our showroom offers a complete display of windows, doors, and accessories, while our wholesale network ensures reliable supply for businesses and retailers. With our own brands, Grace and Grace Pro, we deliver full-gauge thickness, superior strength, and lasting quality.",
   aboutText:
     "Grace Aluminum is a trusted name in the aluminium industry, delivering premium-quality solutions with a focus on strength, precision, and reliability.",
   aboutText2:

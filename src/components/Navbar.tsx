@@ -50,6 +50,13 @@ export default function Navbar() {
   // Determine if navbar should look "solid" (dark bg) or "transparent"
   const isSolid = isScrolled || !isHomePage;
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <motion.nav
@@ -65,13 +72,17 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
+            <Link 
+              href="/" 
+              className="flex items-center gap-3 group"
+              onClick={handleLogoClick}
+            >
               <span
                 className={`text-2xl font-serif font-semibold tracking-tight transition-colors duration-300 ${
                   isSolid ? "text-white" : "text-charcoal"
                 }`}
               >
-                Grace Aluminum
+                Grace Aluminium
               </span>
               <div className={`hidden sm:flex flex-col transition-colors duration-300`}>
                 <span className="text-[9px] tracking-[0.25em] uppercase font-medium text-copper">
@@ -86,6 +97,7 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
+                  onClick={link.href === "/" ? handleLogoClick : undefined}
                   className={`relative px-3 py-2 text-[12px] tracking-[0.05em] uppercase transition-colors duration-300 ${
                     isSolid
                       ? pathname === link.href
