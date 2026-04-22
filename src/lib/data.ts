@@ -326,19 +326,30 @@ export const projects: Project[] = [
 // ─── Clients & Partners ─────────────────────────────
 
 export const clients: Client[] = [
-  { id: "cl-1", name: "Al Futtaim Group", logo: "", type: "client", order: 1, isActive: true },
-  { id: "cl-2", name: "Emaar Properties", logo: "", type: "client", order: 2, isActive: true },
-  { id: "cl-3", name: "Damac Properties", logo: "", type: "client", order: 3, isActive: true },
-  { id: "cl-4", name: "Nakheel", logo: "", type: "client", order: 4, isActive: true },
-  { id: "cl-5", name: "Meraas Holding", logo: "", type: "client", order: 5, isActive: true },
-  { id: "cl-6", name: "Sobha Realty", logo: "", type: "client", order: 6, isActive: true },
+  { id: "cl-1", name: "Defence Housing Authority (DHA) Multan", logo: "", type: "client", order: 1, isActive: true },
+  { id: "cl-2", name: "Blue World City Islamabad", logo: "", type: "client", order: 2, isActive: true },
+  { id: "cl-3", name: "Dream Gardens Multan & Lahore", logo: "", type: "client", order: 3, isActive: true },
+  { id: "cl-4", name: "Royal Orchard Multan, Sahiwal, Sargodha", logo: "", type: "client", order: 4, isActive: true },
+  { id: "cl-5", name: "Honda Showroom Multan", logo: "", type: "client", order: 5, isActive: true },
+  { id: "cl-6", name: "Fri Chicks Multan", logo: "", type: "client", order: 6, isActive: true },
+  { id: "cl-7", name: "NFC University Multan", logo: "", type: "client", order: 7, isActive: true },
+  { id: "cl-8", name: "Bahauddin Zakariya University Multan", logo: "", type: "client", order: 8, isActive: true },
+  { id: "cl-9", name: "Pak Turk Hospital Muzaffargarh", logo: "", type: "client", order: 9, isActive: true },
+  { id: "cl-10", name: "Mahmood Textile Mills Multan", logo: "", type: "client", order: 10, isActive: true },
+  { id: "cl-11", name: "Penta Square DHA Phase 5, Lahore", logo: "", type: "client", order: 11, isActive: true },
+  { id: "cl-12", name: "Dr. Zaffar Hospital Layyah", logo: "", type: "client", order: 12, isActive: true },
+  { id: "cl-13", name: "UBL Main Branch Multan", logo: "", type: "client", order: 13, isActive: true },
+  { id: "cl-14", name: "City Hospital Multan", logo: "", type: "client", order: 14, isActive: true },
+  { id: "cl-15", name: "Mehar Fatima Tower", logo: "", type: "client", order: 15, isActive: true },
+  { id: "cl-16", name: "Ibn-E-Sina Hospital", logo: "", type: "client", order: 16, isActive: true },
+  { id: "cl-17", name: "Green Homes", logo: "", type: "client", order: 17, isActive: true },
+  { id: "cl-18", name: "TKW", logo: "/assets/clients/TKW.jpeg", type: "client", order: 18, isActive: true },
+  { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/PAK AL TECH ALUMINIUM.jpeg", type: "client", order: 19, isActive: true },
 ];
 
 export const partners: Client[] = [
-  { id: "pt-1", name: "Schüco International", logo: "", type: "partner", order: 1, isActive: true },
-  { id: "pt-2", name: "Reynaers Aluminium", logo: "", type: "partner", order: 2, isActive: true },
-  { id: "pt-3", name: "Technal", logo: "", type: "partner", order: 3, isActive: true },
-  { id: "pt-4", name: "Gulf Extrusions", logo: "", type: "partner", order: 4, isActive: true },
+  { id: "pt-1", name: "Grace Pro Aluminium", logo: "/assets/partner/Grace Pro Aluminium.jpeg", type: "partner", order: 1, isActive: true },
+  { id: "pt-2", name: "THE MUGHAL'S ALUMINIUM", logo: "/assets/partner/THE MUGHAL'S ALUMINIUM.jpeg", type: "partner", order: 2, isActive: true },
 ];
 
 // ─── Site Settings ───────────────────────────────────

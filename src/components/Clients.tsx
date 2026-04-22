@@ -8,19 +8,30 @@ interface ClientsProps {
   partners: Client[];
 }
 
-function LogoPlaceholder({ name }: { name: string }) {
+function LogoItem({ name, logo }: { name: string; logo?: string }) {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center px-12 py-8 grayscale hover:grayscale-0 opacity-40 hover:opacity-100 transition-all duration-500 cursor-pointer">
-      <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full bg-copper/10 flex items-center justify-center border border-copper/20">
-          <span className="text-sm font-display font-bold text-copper">
-            {name.charAt(0)}
+    <div className="flex-shrink-0 flex items-center justify-center px-12 py-6 opacity-60 hover:opacity-100 transition-all duration-500 cursor-pointer group">
+      {logo ? (
+        <div className="h-12 md:h-16 w-auto relative flex items-center justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img 
+            src={logo} 
+            alt={name} 
+            className="h-full w-auto object-contain transition-transform duration-500 group-hover:scale-110" 
+          />
+        </div>
+      ) : (
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-charcoal/5 shadow-sm">
+            <span className="text-lg font-display font-bold text-copper">
+              {name.charAt(0)}
+            </span>
+          </div>
+          <span className="text-sm font-display font-bold tracking-widest text-charcoal/80 uppercase whitespace-nowrap">
+            {name}
           </span>
         </div>
-        <span className="text-base font-display font-semibold tracking-wide text-charcoal/60 whitespace-nowrap">
-          {name}
-        </span>
-      </div>
+      )}
     </div>
   );
 }
@@ -65,7 +76,7 @@ export default function Clients({ clients, partners }: ClientsProps) {
           <div className="flex overflow-hidden border-y border-border/60 py-4 bg-white/50 backdrop-blur-sm">
             <div className="animate-marquee flex whitespace-nowrap hover:[animation-play-state:paused]">
               {scrollingClients.map((client, index) => (
-                <LogoPlaceholder key={`${client.id}-${index}`} name={client.name} />
+                <LogoItem key={`${client.id}-${index}`} name={client.name} logo={client.logo} />
               ))}
             </div>
           </div>
@@ -80,7 +91,7 @@ export default function Clients({ clients, partners }: ClientsProps) {
              {/* Note: reverse direction achieved via CSS RTL on container and continuous scrolling animation */}
             <div className="animate-marquee flex whitespace-nowrap hover:[animation-play-state:paused]" style={{ direction: 'ltr' }}>
               {scrollingPartners.map((partner, index) => (
-                <LogoPlaceholder key={`${partner.id}-${index}`} name={partner.name} />
+                <LogoItem key={`${partner.id}-${index}`} name={partner.name} logo={partner.logo} />
               ))}
             </div>
           </div>

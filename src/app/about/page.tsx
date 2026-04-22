@@ -34,7 +34,7 @@ export default function AboutPage() {
                       <img 
                         src="/assets/ceo/ceo.jpeg" 
                         alt="Waqas Mirza, CEO Grace Aluminum" 
-                        className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        className="absolute inset-0 w-full h-full object-cover transition-all duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/20 via-transparent to-transparent" />
                    </div>
