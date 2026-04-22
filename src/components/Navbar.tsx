@@ -19,6 +19,9 @@ const catalogLinks = [
   { label: "Windows", href: "/windows" },
   { label: "Kitchens", href: "/kitchens" },
   { label: "Wardrobes", href: "/wardrobes" },
+  { label: "Wall Cladding", href: "/cladding" },
+  { label: "Skylights", href: "/skylights" },
+  { label: "Stair Railings", href: "/railings" },
   { label: "Shower", href: "/catalog/shower" },
 ];
 

@@ -7,7 +7,7 @@ import { ArrowRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface CatalogCategoryProps {
-  category: "doors" | "windows" | "kitchens" | "wardrobes" | "shower";
+  category: "doors" | "windows" | "kitchens" | "wardrobes" | "shower" | "cladding" | "skylights" | "railings";
   title: string;
   description: string;
   images?: string[];

@@ -71,7 +71,7 @@ export interface CatalogItem {
   id: string;
   title: string;
   slug: string;
-  category: "doors" | "windows" | "kitchens" | "wardrobes";
+  category: "doors" | "windows" | "kitchens" | "wardrobes" | "cladding" | "skylights" | "railings";
   shortDescription: string;
   description: string;
   features: string[];
@@ -161,6 +161,48 @@ export const catalog: CatalogItem[] = [
     mainImage: "/images/catalog/wardrobe-glass.jpg",
     gallery: ["/images/catalog/wardrobe-glass-2.jpg"],
     order: 1,
+  },
+
+  // Wall Cladding
+  {
+    id: "clad-1",
+    title: "Premium Aluminium Cladding",
+    slug: "premium-aluminium-cladding",
+    category: "cladding",
+    shortDescription: "Durable and aesthetic exterior wall cladding solutions.",
+    description: "Our Aluminium Wall Cladding systems provide superior protection and a modern look for any building. Resistant to weather and corrosion, they are perfect for both residential and commercial projects.",
+    features: ["Weather resistant", "Low maintenance", "Modern aesthetic", "Easy installation"],
+    mainImage: "/assets/cladding/Aluminium Wall Cladding.jpeg",
+    gallery: ["/assets/cladding/Aluminium Wall Cladding2.jpeg"],
+    order: 1,
+  },
+
+  // Skylights
+  {
+    id: "sky-1",
+    title: "Architectural Skylights",
+    slug: "architectural-skylights",
+    category: "skylights",
+    shortDescription: "Brings natural light into your space with elegance.",
+    description: "Our skylights are designed to maximize natural light while maintaining high thermal efficiency. Custom-built to fit any roof structure, they add a sense of openness and luxury to your interiors.",
+    features: ["High thermal insulation", "Leak-proof engineering", "UV protection glass", "Custom sizes available"],
+    mainImage: "/assets/skylights/Aluminium SkyLight.jpeg",
+    gallery: [],
+    order: 1,
+  },
+
+  // Stair Railings
+  {
+    id: "rail-1",
+    title: "Modern Stair Railings",
+    slug: "modern-stair-railings",
+    category: "railings",
+    shortDescription: "Sleek and safe aluminium railing systems.",
+    description: "Combine safety with style using our premium aluminium stair railing systems. Available in various finishes and designs, they provide a durable and elegant solution for your stairs.",
+    features: ["Corrosion resistant", "High strength", "Minimalist design", "Multiple finish options"],
+    mainImage: "/assets/railings/Aluminium Stair Railing.jpeg",
+    gallery: [],
+    order: 1,
   }
 ];
 
@@ -238,6 +280,48 @@ export const services: Service[] = [
     order: 5,
     isActive: true,
   },
+  {
+    id: "svc-6",
+    title: "Aluminium Cladding",
+    slug: "cladding",
+    category: "Exterior",
+    description:
+      "Durable and aesthetic exterior wall cladding solutions for modern buildings.",
+    longDescription:
+      "Our Aluminium Wall Cladding systems provide superior protection and a modern look for any building. Resistant to weather and corrosion, they are perfect for both residential and commercial projects. Available in multiple finishes and textures.",
+    image: "/assets/cladding/Aluminium Wall Cladding.jpeg",
+    icon: "Layout",
+    order: 6,
+    isActive: true,
+  },
+  {
+    id: "svc-7",
+    title: "Architectural Skylights",
+    slug: "skylights",
+    category: "Exterior",
+    description:
+      "Elegant skylight systems that maximize natural light and thermal efficiency.",
+    longDescription:
+      "Illuminate your interiors with our elegant skylight systems. Custom-engineered for thermal efficiency and a seamless integration with your roof. Built with high-performance glass and premium aluminium frames.",
+    image: "/assets/skylights/Aluminium SkyLight.jpeg",
+    icon: "Sun",
+    order: 7,
+    isActive: true,
+  },
+  {
+    id: "svc-8",
+    title: "Stair Railings",
+    slug: "railings",
+    category: "Interior",
+    description:
+      "Sleek and safe aluminium railing systems for modern staircases.",
+    longDescription:
+      "Enhance your staircase with our premium aluminium railing systems. Designed for safety, durability, and a clean minimalist aesthetic. Available in various profiles and finish options to match your interior design.",
+    image: "/assets/railings/Aluminium Stair Railing.jpeg",
+    icon: "Activity",
+    order: 8,
+    isActive: true,
+  },
 ];
 
 // ─── Projects ────────────────────────────────────────
@@ -255,19 +339,6 @@ export const projects: Project[] = [
     year: "2024",
     isFeatured: true,
     order: 1,
-  },
-  {
-    id: "prj-2",
-    title: "Luxury Kitchen Remodel",
-    slug: "luxury-kitchen-remodel",
-    category: "Interior",
-    images: ["/assets/projects/Aluminium SkyLight.jpeg"],
-    description:
-      "Full kitchen redesign with premium aluminum cabinetry, integrated lighting, and contemporary finishes.",
-    client: "Al Rashid Family",
-    year: "2024",
-    isFeatured: true,
-    order: 2,
   },
   {
     id: "prj-3",
