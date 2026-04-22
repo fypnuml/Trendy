@@ -80,6 +80,19 @@ export interface CatalogItem {
   order: number;
 }
 
+export interface Branch {
+  id: string;
+  name: string;
+  location: string;
+  address: string;
+  phone: string;
+  ptcl?: string;
+  email?: string;
+  description: string;
+  logo: string;
+  image?: string;
+}
+
 // ─── Catalog Data ──────────────────────────────────────
 
 export const catalog: CatalogItem[] = [
@@ -423,6 +436,40 @@ export const partners: Client[] = [
   { id: "cl-19", name: "PAK AL TECH ALUMINIUM", logo: "/assets/clients/pak_al_tech.jpeg", type: "partner", order: 4, isActive: true },
 ];
 
+export const branches: Branch[] = [
+  {
+    id: "br-1",
+    name: "Islamabad Branch",
+    location: "Islamabad",
+    address: "Bukhari Plaza, Opposite DHA Phase-II, GT Road, Islamabad, Pakistan",
+    phone: "+92 300 6901280",
+    ptcl: "051 5595000",
+    email: "trendygulbergisb@gmail.com",
+    description: "Our Islamabad branch delivers a premium showroom experience, specializing in modern aluminium window systems and kitchen solutions, tailored for high-end residential and commercial projects.",
+    logo: "/assets/branch/paertner 2.jpeg", // TRENDY KITCHEN WINDOWS
+  },
+  {
+    id: "br-2",
+    name: "Multan Branch - Grace Aluminium",
+    location: "Multan",
+    address: "Civic Centre, Opp. Quaid-e-Azam Academy, Link Abdali Road, Nawan Shehar, Multan",
+    phone: "0301-6933733",
+    ptcl: "061 4586937",
+    email: "gracealuminiumpk@gmail.com",
+    description: "As our flagship location, the Multan branch serves as a central hub for both wholesale and retail operations, offering an extensive variety of aluminium profiles and sections with consistent quality and availability.",
+    logo: "/assets/branch/partner1.jpeg",
+  },
+  {
+    id: "br-3",
+    name: "The Mughals Aluminium — Multan",
+    location: "Multan",
+    address: "M.A. Jinnah Road, Qasuri Chowk, Multan",
+    phone: "+92 323 5067358",
+    description: "Operating as an associated branch, The Mughals Aluminium extends the reach of Grace Aluminium’s premium standards in Multan. It provides reliable access to quality aluminium products and supports local market demand with efficient service and trusted supply.",
+    logo: "/assets/branch/partner 3.jpeg",
+  }
+];
+
 // ─── Site Settings ───────────────────────────────────
 
 export const siteSettings: SiteSettings = {
@@ -493,6 +540,10 @@ export function getClients() {
 
 export function getPartners() {
   return partners.filter((p) => p.isActive).sort((a, b) => a.order - b.order);
+}
+
+export function getBranches() {
+  return branches;
 }
 
 export function getSettings() {
