@@ -83,14 +83,14 @@ export default function Hero({ settings }: HeroProps) {
               className="relative flex flex-col gap-3 sm:gap-4"
             >
               <span className="text-3xl sm:text-5xl md:text-6xl font-display font-medium text-charcoal tracking-tight leading-tight">
-                The Standard of 
+                Setting New
               </span>
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-6">
-                <span className="text-5xl sm:text-7xl md:text-8xl font-display font-black tracking-tighter leading-none text-charcoal">
-                  Premium
+                <span className="text-4xl sm:text-7xl md:text-8xl font-display font-black tracking-tighter leading-none text-charcoal uppercase">
+                  Benchmarks
                 </span>
                 <span className="text-4xl sm:text-6xl md:text-7xl font-serif italic text-copper/90 font-light tracking-wide mt-2 sm:mt-0">
-                  Aluminium
+                  in Aluminium
                 </span>
               </div>
             </motion.h1>

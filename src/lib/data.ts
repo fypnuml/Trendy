@@ -439,7 +439,7 @@ export const siteSettings: SiteSettings = {
     twitter: "",
     linkedin: "",
   },
-  heroTitle: "Premium Aluminum Solutions",
+  heroTitle: "Setting New Benchmarks in Aluminium",
   heroSubtitle:
     "Grace Aluminium is a leading retailer and wholesaler of premium aluminium products. Our showroom offers a complete display of windows, doors, and accessories, while our wholesale network ensures reliable supply for businesses and retailers. With our own brands, Grace and Grace Pro, we deliver full-gauge thickness, superior strength, and lasting quality.",
   aboutText:
