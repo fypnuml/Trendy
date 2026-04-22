@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getServices, getProjects, catalog } from '@/lib/data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.grace-aluminum.com';
+  const baseUrl = 'https://trendy-taupe.vercel.app';
 
   // Static core routes
   const routes = [

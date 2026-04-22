@@ -40,10 +40,10 @@ export default function Home() {
     <>
       <LoadingScreen />
       <Navbar />
-      <main className="bg-charcoal min-h-screen relative overflow-hidden">
-        {/* Persistent Page-wide Visual Depth */}
-        <div className="absolute inset-0 noise-bg opacity-20 pointer-events-none" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1500px] bg-gradient-radial from-copper/5 to-transparent pointer-events-none" />
+      <main className="bg-slate-50 min-h-screen relative overflow-hidden">
+        {/* Subtle Light Depth */}
+        <div className="absolute inset-0 noise-bg opacity-[0.03] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1500px] bg-gradient-radial from-slate-200/50 to-transparent pointer-events-none" />
         
         <Hero settings={settings} />
         
