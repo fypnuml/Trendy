@@ -25,6 +25,9 @@ const routeMap: Record<string, string> = {
   "shower-enclosures": "/catalog/shower",
   "wardrobes": "/wardrobes",
   "aluminum-kitchens": "/kitchens",
+  "cladding": "/cladding",
+  "skylights": "/skylights",
+  "railings": "/railings",
 };
 
 export default function Services({ services }: ServicesProps) {

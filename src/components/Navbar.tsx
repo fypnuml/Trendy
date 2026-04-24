@@ -35,21 +35,26 @@ export default function Navbar() {
   const isHomePage = pathname === "/";
 
   useEffect(() => {
-    // If we're not on the homepage, the navbar should probably always have a background,
-    // but a slight scroll effect is still nice. Let's make it always solid if not on homepage,
-    // or just rely on the layout having padding. Let's keep the scroll effect but alter base style.
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    // Initialize state
     handleScroll();
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Body scroll lock
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
 
   // Determine if navbar should look "solid" (dark bg) or "transparent"
   const isSolid = isScrolled || !isHomePage;
@@ -210,71 +215,89 @@ export default function Navbar() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-charcoal md:hidden"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[100] bg-charcoal md:hidden overflow-y-auto"
           >
             <div className="absolute inset-0 noise-bg opacity-30 pointer-events-none" />
             
-            <div className="flex flex-col items-center justify-center h-full gap-8 relative z-10">
-              {navLinks.map((link, index) => (
-                <motion.div
-                  key={link.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 10 }}
-                  transition={{ delay: index * 0.05, duration: 0.4 }}
+            <div className="flex flex-col min-h-screen relative z-10 px-8 py-12">
+              {/* Menu Header */}
+              <div className="flex items-center justify-between mb-16">
+                <span className="text-xl font-serif font-semibold text-white">Grace Aluminium</span>
+                <button 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
                 >
-                  <Link
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-2xl font-light tracking-[0.1em] uppercase transition-colors duration-300 ${
-                      pathname === link.href ? "text-copper font-medium" : "text-white/60 hover:text-white"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
+                  <X className="w-6 h-6 text-white" />
+                </button>
+              </div>
 
-              <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 exit={{ opacity: 0, y: 10 }}
-                 transition={{ delay: navLinks.length * 0.05, duration: 0.4 }}
-                 className="flex flex-col items-center gap-6 mt-4"
-              >
-                <div className="w-12 h-px bg-white/20" />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-copper font-medium">Catalog</span>
-                {catalogLinks.map((link) => (
-                  <Link
+              {/* Nav Links */}
+              <div className="flex flex-col gap-6 mb-12">
+                {navLinks.map((link, index) => (
+                  <motion.div
                     key={link.label}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`text-lg font-light tracking-[0.1em] uppercase transition-colors duration-300 ${
-                      pathname === link.href ? "text-white font-medium" : "text-white/50 hover:text-white"
-                    }`}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
                   >
-                    {link.label}
-                  </Link>
+                    <Link
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={`text-3xl font-serif tracking-tight transition-colors duration-300 ${
+                        pathname === link.href ? "text-copper font-semibold" : "text-white/60 hover:text-white"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
                 ))}
-              </motion.div>
+              </div>
 
+              <div className="w-full h-px bg-white/10 mb-10" />
+
+              {/* Catalog Links */}
+              <div className="mb-12">
+                <span className="text-[10px] tracking-[0.4em] uppercase text-copper font-bold mb-8 block">Product Catalog</span>
+                <div className="grid grid-cols-2 gap-x-6 gap-y-6">
+                  {catalogLinks.map((link, index) => (
+                    <motion.div
+                      key={link.label}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.3 + index * 0.03 }}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={`text-xs tracking-[0.1em] uppercase transition-colors duration-300 ${
+                          pathname === link.href ? "text-white font-bold" : "text-white/40 hover:text-white"
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile CTA */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                transition={{ delay: (navLinks.length + catalogLinks.length) * 0.05, duration: 0.4 }}
-                className="mt-8"
+                transition={{ delay: 0.6 }}
+                className="mt-auto pt-8 pb-12"
               >
                 <Link
                   href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-10 py-4 text-xs tracking-[0.2em] uppercase font-medium bg-copper text-white hover:bg-copper-light transition-all rounded-sm"
+                  className="flex items-center justify-center gap-3 w-full py-5 text-xs tracking-[0.2em] uppercase font-bold bg-copper text-white hover:bg-copper-light transition-all rounded-sm shadow-xl shadow-copper/10"
                 >
                   Get in Touch
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </motion.div>
             </div>
